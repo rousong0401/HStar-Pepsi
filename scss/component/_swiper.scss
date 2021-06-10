@@ -1,0 +1,19 @@
+.swiper-pagination  {
+  position: relative;
+  margin-top: 1.25rem;
+}
+
+.swiper-pagination-bullet {
+  background-color: $white;
+}
+
+.swiper-button-prev,.swiper-button-next {
+  @include mq($until:sm) {
+    display: none;
+  }
+  &::after {
+    color: $white;
+  }
+}
+
+

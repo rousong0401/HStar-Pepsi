@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--swiper-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!--aos-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!--tailwind-->
+  <link rel="stylesheet" href="../dist/tailwind.css">
+  <link rel="stylesheet" href="../dist/css/all.min.css">
+</head>
+
+<body>
+
+  <div class="loading">
+    <div class="loading__background"></div>
+    <div class="loading__foreground">
+      <div class="loading__logo">
+        <img src="../img/logo/logo.png" alt="loading">
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="flex justify-between items-center lg:px-8 | xl:px-11">
+      <a href="index.html" class="block">
+        <img src="../img/logo/logo.png" alt="pepsi logo" class="header__logo">
+      </a>
+      <div class="nav">
+        <ul class="flex">
+          <li><a href="javascript:;" data-href="#title-1" class="text-xl text-blue p-4 | xl:text-3xl xl:px-8">登錄發票</a>
+          </li>
+          <li><a href="javascript:;" data-href="#title-2" class="text-xl text-blue p-4 | xl:text-3xl xl:px-8">活動辦法</a>
+          </li>
+          <li><a href="javascript:;" data-href="#title-3" class="text-xl text-blue p-4 | xl:text-3xl xl:px-8">影音專區</a>
+          </li>
+          <li><a href="../html/winner.html" class="text-xl text-blue p-4 | xl:text-3xl xl:px-8">中獎名單</a></li>
+          <li><a href="../html/precautions.html" class="text-xl text-blue p-4 | xl:text-3xl xl:px-8">注意事項</a></li>
+        </ul>
+        <div class="flex ml-6">
+          <a href="javascript:;" class="mr-4">
+            <img src="../img/icon/icon-fb.svg" alt="fb logo">
+          </a>
+          <a href="javascript:;">
+            <img src="../img/icon/icon-line.svg" alt="line logo">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header__burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <div class="mobile-nav">
+    <ul>
+      <li><a href="javascript:;" data-href="#title-1" class="text-blue p-3 | md:text-lg md:p-4">登錄發票</a></li>
+      <li><a href="javascript:;" data-href="#title-2" class="text-blue p-3 | md:text-lg md:p-4">活動辦法</a></li>
+      <li><a href="javascript:;" data-href="#title-3" class="text-blue p-3 | md:text-lg md:p-4">影音專區</a></li>
+      <li><a href="../html/winner.html" class="text-blue p-3 | md:text-lg md:p-4">中獎名單</a></li>
+      <li><a href="../html/precautions.html" class="text-blue p-3 | md:text-lg md:p-4">注意事項</a></li>
+    </ul>
+    <div class="flex justify-center p-3 | md:p-4">
+      <a href="javascript:;" class="mr-4">
+        <img src="../img/icon/icon-fb.svg" alt="fb logo">
+      </a>
+      <a href="javascript:;">
+        <img src="../img/icon/icon-line.svg" alt="line logo">
+      </a>
+    </div>
+  </div>
+
+  <main>
+
+    <section>
+      <div class="banner">
+        <img src="../img/bg/bg-point-1.png" alt="背景圓點圖" class="banner__point">
+        <img src="../img/bg/bg-white.png" alt="背景圖" class="banner__bg">
+        <div class="relative lg:flex">
+          <div class="relative lg:w-1/2">
+            <div class="flex items-end h-full">
+              <img src="../img/bg/bg-point-1.png" alt="背景圓點圖" class="mobile-banner__point">
+              <img src="../img/photo/photo-1.png" alt="形象照1" class="relative" data-aos="zoom-in"
+                data-aos-duration="1000">
+            </div>
+          </div>
+
+          <div class="lg:w-1/2">
+            <div class="px-5 pb-4 | md:px-10 md:pb-8 | xl:px-20 xl:pb-15">
+              <img src="../img/logo/slagen.png" alt="喝百事想樂趣slagen" class="banner__slagen">
+              <img src="../img/bg/bg-pc-1.png" alt="抽獎品項" class="lottery" data-aos="fade-right" data-aos-duration="1500"
+                data-aos-easing="ease-in-sine">
+              <p class="text-sm text-blue mb-2.5 sm:text-base | md:text-lg | lg:text-xl">
+                買百事可樂/七喜汽水/激浪汽水系列商品登錄發票抽大獎，完成登錄立即再送肯德基、必勝客美食優惠券，讓你吃喝玩樂整個夏天!
+              </p>
+              <div class="flex justify-center">
+                <a href="javascript:;" class="mr-3 | md:mr-6">
+                  <img src="../img/button/button-immediately.png" alt="立即登入發票">
+                </a>
+                <a href="javascript:;">
+                  <img src="../img/button/button-line.png" alt="line登入發票">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <div id="title-1" class="login">
+        <img src="../img/bg/bg-point-2.png" alt="背景圓點圖" class="login__point1">
+        <img src="../img/bg/bg-point-3.png" alt="背景圓點圖" class="login__point2">
+        <div class="login__main">
+          <div class="lg:w-1/2" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="flex items-end h-full">
+              <img src="../img/photo/photo-2.png" alt="形象照2" class="login__photo">
+            </div>
+          </div>
+          <div class="lg:w-1/2" data-aos="fade-up" data-aos-duration="1000">
+            <div class="px-5 pb-4 | md:px-10 md:pb-8 | xl:px-20 xl:pb-15">
+              <img src="../img/bg/bg-login.png" alt="登錄發票" class="mx-auto mb-4 | lg:mb-5 | xl:mb-6">
+              <p class="text-white text-center mb-4 md:text-lg | lg:mb-5 | xl:mb-6 xl:text-xl">請填寫正確個人資訊，並詳閱活動說明</p>
+              <div class="space-y-4 | lg:space-y-5 | xl:space-y-6">
+                <div class="sm:flex">
+                  <label for="name" class="form-label">姓名</label>
+                  <input type="text" id="name" class="form-control" placeholder="請填寫您的真實姓名">
+                </div>
+                <div class="sm:flex">
+                  <label for="tel" class="form-label">行動電話</label>
+                  <input type="tel" id="tel" class="form-control" placeholder="請填寫您的手機 (將以此號碼通知中獎)">
+                </div>
+                <div class="sm:flex">
+                  <label for="number1" class="form-label">發票一</label>
+                  <div class="flex-1">
+                    <input type="text" id="number1" class="form-control form-control--gray-100"
+                      placeholder="輸入統一發票號碼(共10碼)">
+                    <div class="form-select">
+                      <select class="form-control">
+                        <option value="請選擇購買通路">請選擇購買通路</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="sm:flex">
+                  <label for="number2" class="form-label">發票二</label>
+                  <div class="flex-1">
+                    <input type="text" id="number2" class="form-control form-control--gray-100"
+                      placeholder="輸入統一發票號碼(共10碼)">
+                    <div class="form-select">
+                      <select class="form-control">
+                        <option value="請選擇購買通路">請選擇購買通路</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="login__add">
+                </div>
+                <div class="sm:flex">
+                  <label for="code" class="form-label">驗證碼</label>
+                  <input type="text" id="code" class="form-control" placeholder="請輸入驗證碼">
+                  <a href="javascript:;" class="login__code">P x H b b</a>
+                </div>
+                <label class="checkbox flex">
+                  <input type="checkbox">
+                  <span class="checkbox__status mr-2 | lg:mr-3"></span>
+                  <span
+                    class="flex-1 text-xs text-white">我已詳閱<u>活動說明</u>及<u>注意事項</u>，同意提供個資作為活動參加使用，並已確認輸入有效發票，保留有顯示購買商品的發票正本及購買明細，以利兌獎。</span>
+                </label>
+              </div>
+              <div class="flex justify-center mt-4 | lg:mt-6 | xl:mt-8">
+                <a href="javascript:;" class="login__send">
+                  <img src="../img/button/button-send.png" alt="確認送出按鈕">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="title-2" class="info">
+        <div class="info__main">
+          <div class="info__content">
+            <div class="method">
+              <div data-aos="fade-up" data-aos-duration="1000">
+                <img src="../img/bg/bg-active.png" alt="活動辦法" class="mx-auto mb-4 | lg:mb-5 | xl:mb-6">
+                <p class="method__title">
+                  於活動期間買百事/七喜/激浪商品，上網登錄發票，天天抽Marshall藍芽喇叭，加碼再送Marshall音響造型冰箱，完成登錄再送肯德基、必勝客美食優惠券!</p>
+                <img src="../img/bg/bg-pc-2.png" alt="抽獎品項">
+                <p class="text-xs text-white text-right mb-4 | md:mb-6 | lg:mb-8 | xl:mb-10">贈品以實物為準，圖片僅供參考</p>
+              </div>
+              <div class="method__content" data-aos="fade-up" data-aos-duration="1000">
+                <ul class="method__list">
+                  <li class="method__item">
+                    <h3>活動時間</h3>
+                    <p>自2021/6/30 00:00至2021/9/30 23:59止購買百事可樂/七喜汽水/激浪汽水系列商品任一件，並登錄發票即可獲得抽獎機會(以系統時間為準)。</p>
+                  </li>
+                  <li class="method__item">
+                    <h3>活動獎項</h3>
+                    <ul>
+                      <li>
+                        <p>Marshall藍牙喇叭x10名 (於2021/9/20~2021/10/1抽出，每天乙名)</p>
+                      </li>
+                      <li>
+                        <p>Marshall造型冰箱x乙名(於2021/10/1抽出，乙名)</p>
+                      </li>
+                      <li>
+                        <p>【7-11通路限定】KKBOX 365天免費暢聽序號(價值1,788元/名) *5名</p>
+                        <p>(限7-11通路消費活動商品之發票，加碼好禮將於2021/10/1抽出)</p>
+                      </li>
+                      <li>
+                        <p>【萊爾富通路限定】百事造型藍牙喇叭(價值1,600元/台) *5名</p>
+                        <p>(限萊爾富通路消費活動商品之發票，加碼好禮將於2021/10/1抽出)</p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="method__item method__item--number">
+                    <h3>中獎公告時間</h3>
+                    <ul>
+                      <li>
+                        <p>1.Marshall Stockwell II藍牙喇叭於2021/9/20起(排除國定假日)，連續10天每天抽出乙名，合計共10名；Marshall FRIDGE 4.4
+                          音響造型冰箱乙名及7-11、萊爾富限定加碼好禮各5名於2021/10/1抽出，皆於抽獎當天16：00由系統隨機抽出幸運得獎者，公布於活動網站，並於當天18：00以簡訊通知得獎者，請務必依照指定流程完成兌獎才有領獎資格。
+                        </p>
+                      </li>
+                      <li>
+                        <p>2.參與活動者請密切注意中獎名單，若無收到得獎通知，請自行與主辦單位聯繫，以免錯過得獎權利。</p>
+                      </li>
+                      <li>
+                        <p>3.中獎者務須於官網下載兌獎回函並以正楷填妥資料，連同中獎發票正本、身分證正反面影本以掛號寄回台中市沙鹿區興安路65號 「喝百事響樂趣 活動小組」收。</p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="method__item">
+                    <h3>資料寄回時間</h3>
+                    <p>2021/10/22截止(憑郵戳日期)前，含正本發票/消費明細/中獎通知函/身分證正反影本。</p>
+                  </li>
+                  <li class="method__item">
+                    <h3>獎品寄送日期</h3>
+                    <p>2021/11/19前，活動小組將贈品全數寄出，寄出後恕不另行通知。</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="title-3" class="video" data-aos="fade-up" data-aos-duration="2000">
+              <img src="../img/bg/bg-video.png" alt="影音專區" class="mx-auto mb-9">
+              <div class="video__iframe">
+                <div class="video__media">
+                  <iframe src="https://www.youtube.com/embed/UNsfcZfASpA" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="video__scroll">
+                <a href="javascript:;" class="video__scrollArrow"></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="modal">
+        <div class="modal__main">
+          <div class="modal__card">
+            <div class="modal__close"></div>
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="../img/bg/bg-coupon.png" alt="優惠券" class="mx-auto">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/bg/bg-coupon.png" alt="優惠券" class="mx-auto">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/bg/bg-coupon.png" alt="優惠券" class="mx-auto">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/bg/bg-coupon.png" alt="優惠券" class="mx-auto">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/bg/bg-coupon.png" alt="優惠券" class="mx-auto">
+                </div>
+              </div>
+              <div class="swiper-pagination">
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <p class="text-white text-center mb-4 | md:text-lg md:mb-8">儲存美食優惠券：手機長按圖片可儲存，電腦按右鍵可另存新檔。</p>
+            <div class="flex justify-center">
+              <a href="javascript:;">
+                <img src="../img/button/button-share-fb.png" alt="分享到Facebook" class="mr-6">
+              </a>
+              <a href="javascript:;">
+                <img src="../img/button/button-share-line.png" alt="分享到LINE">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="p-4 | md:p-5">
+      <p class="text-sm text-light-blue text-center | sm:text-base | md:text-lg">
+        百事可樂、PEPSI，PEPSI-COLA及百事圓球圖案為美國百事公司PepsiCo, Inc. 所擁有的商標©百事公司
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="../js/app.js"></script>
+
+</body>
+
+</html>

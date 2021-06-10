@@ -1,0 +1,340 @@
+// login
+.login {
+  position: relative;
+  background-color: $primary;
+  overflow: hidden; 
+}
+
+.login__point1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+}
+
+.login__point2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+}
+
+.login__photo {
+  width: 75%;
+  margin: 0 auto;
+  @include mq(lg) {
+    width: 100%;
+  }
+}
+
+.login__main {
+  position: relative;
+  display: flex;
+  padding-top: 60px;
+  flex-direction: column-reverse;
+  @include mq(md) {
+    padding-top: 80px;
+  }
+  @include mq(lg) {
+    padding-top: 100px;
+    flex-direction: row;
+  }
+}
+
+.login__add {
+  position: relative;
+  margin: 0 auto;
+  width: 35px;
+  height: 35px;
+  background-color: $white;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: transform .3s;
+  cursor: pointer;
+   @include mq(md) {
+     width: 40px;
+     height: 40px;
+   }
+   @include mq(xl) {
+     width: 45px;
+     height: 45px;
+   }
+   &:hover {
+    transform: scale(1.1);
+  }
+   &::before,&::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);   
+    background-color: $primary;
+    width: 4px;
+    height: 20px;
+    @include mq(md) {
+      height: 24px;
+    }
+    @include mq(xl) {
+      height: 28px;
+    }
+  }
+  &::after {
+    transform: translate(-50%,-50%) rotate(90deg);
+  }
+}
+
+.login__send{
+  display: block;
+  transform: scale(1);
+  transition: transform .3s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.login__code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  background-color: $gray-200;
+  color: $dark-yellow;
+  width: 120px;
+  padding: .75rem 1rem;
+  margin-top: .5rem;
+  @include mq(sm) {
+    width: auto;
+    margin-top: 0;
+  }
+  @include mq(md) {
+    font-size: 1.5rem;
+    padding: .75rem 1.25rem;
+  }
+  @include mq(xxl) {
+    font-size: 2.25rem;
+    padding: .75rem 3rem;
+  }
+}
+
+// info
+.info {
+  background-image: url(../../img/bg/bg-active.svg);
+  background-color: $primary;
+  background-position: center center;
+}
+
+.info__main {
+  padding: 50px 20px 24px;
+  @include mq(sm) {
+    padding: 40px;
+  }
+  @include mq(md) {
+    padding: 60px;
+  }
+  @include mq(lg) {
+    padding: 80px;
+  }
+  @include mq(xl) {
+    padding: 120px;
+  }
+}
+
+.info__content {
+  padding: 16px 30px;
+  background-color: $primary;
+  @include mq(md) {
+    padding: 40px;
+  }
+  @include mq(lg) {
+    padding: 70px 80px;
+  }
+  @include mq(xl) {
+    padding: 90px 100px;
+  }
+}
+
+// method
+.method__title {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: $white;
+  @include mq(md) {
+    font-size: 1.25rem;
+  }
+  @include mq(lg) {
+    font-size: 1.5rem;
+  }
+  @include mq(xl) {
+    font-size: 1.875rem;
+  }
+}
+
+.method__item {
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+    @include mq(lg) {
+      margin-bottom: 1.125rem;
+    }
+    @include mq(xl) {
+      margin-bottom: 1.25rem;
+    }
+  }
+  h3 {
+    display: inline-block;
+    background-color: $yellow;
+    color: $light-blue;
+    text-align: center;
+    border: 5px solid $white;
+    padding: .5rem 1rem;
+    margin-bottom: .75rem;
+    font-size: 18px;
+    border-radius: 4px;
+    @include mq(md) {
+      font-size: 20px;
+    }
+    @include mq(lg) {
+      padding: .5rem 1.25rem;
+      margin-bottom: 1rem;
+      font-size: 24px;
+    }
+    @include mq(xl) {
+      font-size: 30px;
+    }
+  }
+  p {
+    color: $white;
+    @include mq(md) {
+      font-size: 18px;
+    }
+    @include mq(lg) {
+      font-size: 20px;  
+    }
+    @include mq(xl) {
+      font-size: 25px;
+    }
+  }
+  li {
+    position: relative;
+    padding-left: 1.5rem;
+    @include mq(xl) {
+      padding-left: 2rem;  
+    }
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 7px;
+      left: 0;
+      width: 14px;
+      height: 14px;
+      background-color: $white;
+      border-radius: 50%;
+      @include mq(sm) {
+        top: 6px;
+      }
+      @include mq(lg) {
+        top: 7px;
+      }
+      @include mq(xl) {
+        top: 13px;
+      }
+    }
+  }
+}
+
+.method__item--number {
+  li {
+    padding-left: 0;
+    &::before {
+      display: none;
+    }
+  }
+}
+
+// video
+.video {
+  position: relative;
+  padding-top: 60px;
+  @include mq(md) {
+    padding-top: 80px;
+  }
+  @include mq(lg) {
+    padding-top: 100px;
+  }
+}
+
+.video__iframe {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.video__media {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.video__scroll {
+  margin: 2rem 0;
+  @include mq(md) {
+    margin: 3rem 0 ;
+  }
+}
+
+.video__scrollArrow {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  background-color: $white;
+  border-radius: 50%;
+  animation: arrowUpDown 1.5s infinite;
+  @include mq(sm) {
+    width: 50px;
+    height: 50px;
+  }
+  @include mq(md) {
+    width: 60px;
+    height: 60px;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    @include positionA(50%,50%);
+    transform: translate(-50%,-50%) rotate(180deg);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 10px 0;
+    border-color: $primary transparent transparent;
+    @include mq(sm) {
+      border-width: 20px 12px 0;
+    }
+    @include mq(md) {
+      border-width: 24px 16px 0;
+    }
+  }
+}
+
+@keyframes arrowUpDown {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(20%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}

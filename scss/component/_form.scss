@@ -1,0 +1,88 @@
+.form-select {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 10rem;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-image: url(../../img/icon/icon-arrow.svg);
+  }
+}
+
+.form-label {
+  display: block;
+  background-color: $dark-blue;
+  color: $white;
+  min-width: 130px;
+  padding: .75rem 1rem;
+  @include mq(sm) {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-size: 1.25rem;
+  }
+  @include mq(lg) { 
+    min-width: 150px;
+    font-size: 1.5rem;
+  }
+  @include mq(xxl) {
+    min-width: 170px;
+    font-size: 1.75rem;
+  }
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  flex: 1;
+  background-color: $white;
+  color: $gray-300;
+  padding: .75rem 1rem;
+  appearance: none;
+  @include mq(lg) {
+    padding: .75rem 1.25rem;
+  }
+  @include mq(xl) {
+    padding: .75rem 1.5rem;
+  }
+  @include mq(xxl) {
+    padding: .75rem 2rem;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.form-control--gray-100 {
+  background-color: $gray-100;
+}
+
+.checkbox {
+  input[type="checkbox"] {
+    display: none;
+    &:checked {
+      ~ .checkbox__status {
+        background-image: url(../../img/icon/icon-right.svg);
+        @include bg;
+      }
+    }
+  }
+}
+
+.checkbox__status {
+  display: block;
+  background-color: $white;
+  width: 20px;
+  height: 20px;
+  @include mq(lg) {
+    width: 25px;
+    height: 25px;
+  }
+  @include mq(xl) {
+    width: 30px;
+    height: 30px;
+  }
+}

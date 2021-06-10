@@ -1,0 +1,26 @@
+// 字體
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+
+// config
+@import 'config/sass-mq';
+@import 'config/mixins';
+@import 'config/variables';
+@import 'config/reboot';
+
+// component
+@import 'component/form';
+@import 'component/list';
+@import 'component/modal';
+@import 'component/swiper';
+
+// layout
+@import 'layout/loading';
+@import 'layout/wrapper';
+@import 'layout/header';
+@import 'layout/nav';
+@import 'layout/banner';
+
+// pages
+@import 'pages/home';
+@import 'pages/winner';
+@import 'pages/precautions';

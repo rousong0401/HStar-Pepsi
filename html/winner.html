@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--swiper-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!--aos-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!--tailwind-->
+  <link rel="stylesheet" href="../dist/tailwind.css">
+  <link rel="stylesheet" href="../dist/css/all.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="flex justify-between items-center lg:px-8 | xl:px-11">
+      <a href="index.html" class="block">
+        <img src="../img/logo/logo.png" alt="pepsi logo" class="header__logo">
+      </a>
+      <div class="nav">
+        <ul class="flex">
+          <li>
+            <a href="../html/index.html" data-href="#title-1"
+              class="text-xl text-blue p-4 | xl:text-3xl xl:px-8">登錄發票</a>
+          </li>
+          <li>
+            <a href="../html/index.html" data-href="#title-2"
+              class="text-xl text-blue p-4 | xl:text-3xl xl:px-8">活動辦法</a>
+          </li>
+          <li>
+            <a href="../html/index.html" data-href="#title-3"
+              class="text-xl text-blue p-4 | xl:text-3xl xl:px-8">影音專區</a>
+          </li>
+          <li><a href="../html/winner.html" class="text-xl text-blue p-4 | xl:text-3xl xl:px-8">中獎名單</a></li>
+          <li><a href="../html/precautions.html" class="text-xl text-blue p-4 | xl:text-3xl xl:px-8">注意事項</a></li>
+        </ul>
+        <div class="flex ml-6">
+          <a href="javascript:;" class="mr-4">
+            <img src="../img/icon/icon-fb.svg" alt="fb logo">
+          </a>
+          <a href="javascript:;">
+            <img src="../img/icon/icon-line.svg" alt="line logo">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header__burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <div class="mobile-nav">
+    <ul>
+      <li><a href="../html/index.html" data-href="#title-1" class="text-blue p-3 | md:text-lg md:p-4">登錄發票</a></li>
+      <li><a href="../html/index.html" data-href="#title-2" class="text-blue p-3 | md:text-lg md:p-4">活動辦法</a></li>
+      <li><a href="../html/index.html" data-href="#title-3" class="text-blue p-3 | md:text-lg md:p-4">影音專區</a></li>
+      <li><a href="../html/winner.html" class="text-blue p-3 | md:text-lg md:p-4">中獎名單</a></li>
+      <li><a href="../html/precautions.html" class="text-blue p-3 | md:text-lg md:p-4">注意事項</a></li>
+    </ul>
+    <div class="flex justify-center p-3 | md:p-4">
+      <a href="javascript:;" class="mr-4">
+        <img src="../img/icon/icon-fb.svg" alt="fb logo">
+      </a>
+      <a href="javascript:;">
+        <img src="../img/icon/icon-line.svg" alt="line logo">
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <div class="winner">
+      <div class="winner__main">
+        <div class="winner__content">
+          <div class="wrapper">
+            <img src="../img/bg/bg-winnerlist.png" alt="中獎名單" class="mx-auto mb-4 | lg:mb-5 | xl:mb-6">
+            <p class="text-white text-center mb-4 md:text-lg | lg:mb-5 | xl:mb-6 xl:text-xl">
+              得獎者請自行下載"中獎回函"並填妥個人資料，依活動辦法說明完成兌獎流程方可領獎。</p>
+            <div class="winner__section">
+              <img src="../img/bg/bg-pc-3.png" alt="抽獎品項" class="mx-auto">
+              <div class="mobile-list">
+                <ul class="mb-6">
+                  <li class="flex -ml-2 -mb-2">
+                    <div class="w-1/5 pl-2 pb-2">
+                      <h2 class="winner__title">姓名</h2>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <h2 class="winner__title">統一發票號碼</h2>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <h2 class="winner__title">手機號碼</h2>
+                    </div>
+                  </li>
+                  <li class="flex -ml-2 -mb-2">
+                    <div class="w-1/5 pl-2 pb-2">
+                      <span>鄭O惠</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>LF23219730</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>0911xxx478</span>
+                    </div>
+                  </li>
+                  <li class="flex -ml-2 -mb-2">
+                    <div class="w-1/5 pl-2 pb-2">
+                      <span>莊O怡</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>JL47594112</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>0937xxx895</span>
+                    </div>
+                  </li>
+                  <li class="flex -ml-2 -mb-2">
+                    <div class="w-1/5 pl-2 pb-2">
+                      <span>鄭O茵</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>KQ39084226</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>0925xxx101</span>
+                    </div>
+                  </li>
+                  <li class="flex -ml-2 -mb-2">
+                    <div class="w-1/5 pl-2 pb-2">
+                      <span>紀O婕</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>KH75390937</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>0972xxx200</span>
+                    </div>
+                  </li>
+                  <li class="flex -ml-2 -mb-2">
+                    <div class="w-1/5 pl-2 pb-2">
+                      <span>劉O美</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>JF03403238</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>0920xxx851</span>
+                    </div>
+                  </li>
+                  <li class="flex -ml-2 -mb-2">
+                    <div class="w-1/5 pl-2 pb-2">
+                      <span>蔡O傑</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>LA42980026</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>0958xxx229</span>
+                    </div>
+                  </li>
+                  <li class="flex -ml-2 -mb-2">
+                    <div class="w-1/5 pl-2 pb-2">
+                      <span>周O宇</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>KH57405681</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>0911xxx478</span>
+                    </div>
+                  </li>
+                  <li class="flex -ml-2 -mb-2">
+                    <div class="w-1/5 pl-2 pb-2">
+                      <span>王O允</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>KS66390804</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>0937xxx895</span>
+                    </div>
+                  </li>
+                  <li class="flex -ml-2 -mb-2">
+                    <div class="w-1/5 pl-2 pb-2">
+                      <span>鄭O惠</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>KS68204306</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>0925xxx101</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <a href="javascript:;">
+                <img src="../img/download/donwload-1.png" alt="中獎回函下載" class="w-full">
+              </a>
+            </div>
+            <div class="winner__section">
+              <img src="../img/bg/bg-pc-4.png" alt="抽獎品項" class="mx-auto">
+              <div class="mobile-list">
+                <ul class="mb-6">
+                  <li class="flex -ml-2 -mb-2">
+                    <div class="w-1/5 pl-2 pb-2">
+                      <h2 class="winner__title">姓名</h2>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <h2 class="winner__title">統一發票號碼</h2>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <h2 class="winner__title">手機號碼</h2>
+                    </div>
+                  </li>
+                  <li class="flex -ml-2 -mb-2">
+                    <div class="w-1/5 pl-2 pb-2">
+                      <span>鄭O惠</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>LF23219730</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>0911xxx478</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <a href="javascript:;">
+                <img src="../img/download/donwload-2.png" alt="中獎回函下載" class="w-full">
+              </a>
+            </div>
+            <div class="winner__section">
+              <img src="../img/bg/bg-pc-5.png" alt="抽獎品項" class="mx-auto">
+              <div class="mobile-list">
+                <ul class="mb-6">
+                  <li class="flex -ml-2 -mb-2">
+                    <div class="w-1/5 pl-2 pb-2">
+                      <h2 class="winner__title">姓名</h2>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <h2 class="winner__title">統一發票號碼</h2>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <h2 class="winner__title">手機號碼</h2>
+                    </div>
+                  </li>
+                  <li class="flex -ml-2 -mb-2">
+                    <div class="w-1/5 pl-2 pb-2">
+                      <span>鄭O惠</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>LF23219730</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>0911xxx478</span>
+                    </div>
+                  </li>
+                  <li class="flex -ml-2 -mb-2">
+                    <div class="w-1/5 pl-2 pb-2">
+                      <span>莊O怡</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>JL47594112</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>0937xxx895</span>
+                    </div>
+                  </li>
+                  <li class="flex -ml-2 -mb-2">
+                    <div class="w-1/5 pl-2 pb-2">
+                      <span>鄭O茵</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>KQ39084226</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>0925xxx101</span>
+                    </div>
+                  </li>
+                  <li class="flex -ml-2 -mb-2">
+                    <div class="w-1/5 pl-2 pb-2">
+                      <span>紀O婕</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>KH75390937</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>0972xxx200</span>
+                    </div>
+                  </li>
+                  <li class="flex -ml-2 -mb-2">
+                    <div class="w-1/5 pl-2 pb-2">
+                      <span>劉O美 </span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>JF03403238</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>0920xxx851</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <a href="javascript:;">
+                <img src="../img/download/donwload-3.png" alt="中獎回函下載" class="w-full">
+              </a>
+            </div>
+            <div class="winner__section">
+              <img src="../img/bg/bg-pc-6.png" alt="抽獎品項" class="mx-auto">
+              <div class="mobile-list">
+                <ul class="mb-6">
+                  <li class="flex -ml-2 -mb-2">
+                    <div class="w-1/5 pl-2 pb-2">
+                      <h2 class="winner__title">姓名</h2>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <h2 class="winner__title">統一發票號碼</h2>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <h2 class="winner__title">手機號碼</h2>
+                    </div>
+                  </li>
+                  <li class="flex -ml-2 -mb-2">
+                    <div class="w-1/5 pl-2 pb-2">
+                      <span>鄭O惠</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>LF23219730</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>0911xxx478</span>
+                    </div>
+                  </li>
+                  <li class="flex -ml-2 -mb-2">
+                    <div class="w-1/5 pl-2 pb-2">
+                      <span>莊O怡</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>JL47594112</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>0937xxx895</span>
+                    </div>
+                  </li>
+                  <li class="flex -ml-2 -mb-2">
+                    <div class="w-1/5 pl-2 pb-2">
+                      <span>鄭O茵</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>KQ39084226</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>0925xxx101</span>
+                    </div>
+                  </li>
+                  <li class="flex -ml-2 -mb-2">
+                    <div class="w-1/5 pl-2 pb-2">
+                      <span>紀O婕</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>KH75390937</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>0972xxx200</span>
+                    </div>
+                  </li>
+                  <li class="flex -ml-2 -mb-2">
+                    <div class="w-1/5 pl-2 pb-2">
+                      <span>劉O美 </span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>JF03403238</span>
+                    </div>
+                    <div class="w-2/5 pl-2 pb-2">
+                      <span>0920xxx851</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <a href="javascript:;">
+                <img src="../img/download/donwload-4.png" alt="中獎回函下載" class="w-full">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="p-4 | md:p-5">
+      <p class="text-sm text-light-blue text-center | sm:text-base | md:text-lg">
+        百事可樂、PEPSI，PEPSI-COLA及百事圓球圖案為美國百事公司PepsiCo, Inc. 所擁有的商標©百事公司
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="../js/app.js"></script>
+
+</body>
+
+</html>
