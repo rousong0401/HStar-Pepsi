@@ -5,10 +5,7 @@
 }
 
 .wrapper__big {
-  width: 95%;
+  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  @include mq(md) {
-    width: 90%;
-  }
 }

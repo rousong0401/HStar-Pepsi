@@ -1,3 +1,13 @@
+.title {
+  width: 200px;
+  @include mq(md) {
+    width: 300px;
+  }
+  @include mq(lg) {
+    width: auto;
+  }
+}
+
 // login
 .login {
   position: relative;
@@ -9,14 +19,26 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 50%;
 }
+ 
+.pad-login__point1 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  @include mq(lg) {
+    left: 0;
+    transform: translateX(0);
+  }
+} 
 
 .login__point2 {
   position: absolute;
   top: 0;
   right: 0;
-  width: 30%;
+  @include mq($until:xl) {
+    width: 50%;
+  }
 }
 
 .login__photo {
@@ -93,19 +115,9 @@
 }
 
 .login__code {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
   background-color: $gray-200;
   color: $dark-yellow;
-  width: 120px;
   padding: .75rem 1rem;
-  margin-top: .5rem;
-  @include mq(sm) {
-    width: auto;
-    margin-top: 0;
-  }
   @include mq(md) {
     font-size: 1.5rem;
     padding: .75rem 1.25rem;
@@ -121,6 +133,7 @@
   background-image: url(../../img/bg/bg-active.svg);
   background-color: $primary;
   background-position: center center;
+  background-size: cover;
 }
 
 .info__main {
@@ -158,6 +171,7 @@
   max-width: 1200px;
   margin: 0 auto;
   color: $white;
+  margin-bottom: 1rem;
   @include mq(md) {
     font-size: 1.25rem;
   }
@@ -215,7 +229,10 @@
   }
   li {
     position: relative;
-    padding-left: 1.5rem;
+    padding-left: 1rem;
+    @include mq(md) {
+      padding-left: 1.5rem;
+    }
     @include mq(xl) {
       padding-left: 2rem;  
     }
@@ -227,14 +244,18 @@
       position: absolute;
       top: 7px;
       left: 0;
-      width: 14px;
-      height: 14px;
+      width: 6px;
+      height: 6px;
       background-color: $white;
       border-radius: 50%;
       @include mq(sm) {
+        width: 8px;
+        height: 8px;
         top: 6px;
       }
       @include mq(lg) {
+        width: 14px;
+        height: 14px;
         top: 7px;
       }
       @include mq(xl) {

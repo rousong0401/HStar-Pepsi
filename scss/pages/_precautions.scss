@@ -42,9 +42,6 @@
     padding-top: 115px;
     padding-bottom: 80px;
   }
-  @include mq($until:xl) {
-    padding-right: 20px;
-  }
 }
 
 .precautions__list {
@@ -56,8 +53,9 @@
   p {
     color: $white;
     flex: 1;
+    font-size: 14px;
     @include mq(md) {
-      font-size: 18px;  
+      font-size: 16px;  
     }
     @include mq(lg) {
       font-size: 20px;
@@ -69,7 +67,7 @@
   span {
     display: inline-block;
     color: $white;
-    width: 40px;
+    width: 22px;
     text-align: right;
     @include mq(md) {
       font-size: 18px;  

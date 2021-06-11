@@ -21,9 +21,9 @@
 
 .banner__slagen {
   animation: swing 2s infinite;
-  width: 100%;
   @include mq(lg) {
     margin-left: -2.5rem;
+    width: 100%;
   }
 }
 
@@ -44,18 +44,6 @@
   top: 0;
   left: 0;
   height: 100%;
-  @include mq($until:lg) {
-    display: none;
-  }
-}
-
-.mobile-banner__point {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  @include mq(lg) {
-    display: none;
-  }
 }
 
 .banner__bg {
@@ -86,4 +74,56 @@
   @include mq(lg) {
     margin-top: -50px;
   }
+}
+
+// pad banner
+.pad-banner {
+  position: relative;
+  padding: 1rem;
+}
+
+.pad-banner__point {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.pad-banner__bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.pad-banner__text {
+  width: 540px;
+  margin: 0 auto;
+}
+
+// mobile banner
+.mobile-banner {
+  position: relative;
+  padding: 1rem;
+}
+
+.mobile-banner__point {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.mobile-banner__bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;  
+  width: 100%;
+  z-index: 2;
+}
+
+.mobile-banner__text {
+  width: 310px;
+  margin: 0 auto;
 }

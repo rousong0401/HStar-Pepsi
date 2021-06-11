@@ -13,9 +13,13 @@
   const openMenu = () => {
     // 點擊漢堡選單顯示nav
     $('.header__burger').on('click', function () {
-      $(".header__burger").toggleClass('is-active');
-      $('.mobile-nav').toggleClass('is-active');
+      $('.mobile-nav').addClass('is-active');
     });
+
+    $('.mobile-close ').on('click', function () {
+      $('.mobile-nav').removeClass('is-active');
+    });
+
   };
   const goTop = () => {
     // 點擊滑動到特定區塊
@@ -30,8 +34,8 @@
     $('[data-href]').on('click', function () {
       let target = $(this).data('href');
       let headerHeight = $('.header').outerHeight();
-      console.log(headerHeight);
       let targetPosition = $(target).offset().top;
+      $('.mobile-nav').removeClass('is-active');
       $('html,body').animate({
         scrollTop: targetPosition - headerHeight
       }, 700);
